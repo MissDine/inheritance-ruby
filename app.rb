@@ -83,3 +83,5 @@ italianChef1.make_salad
 italianChef1.make_special_dish
 
 italianChef1.make_pasta
+
+# In order to lend a module's methods to a class as class methods, we use the extend keyword. 
