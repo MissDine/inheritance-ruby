@@ -11,7 +11,8 @@ class Chef
     end  
 end 
 
-# Creating another class of a chef
+# Creating another class of a chef- italianChef.
+# Italianchef is considered a sub class of chef
 # We can use inheritance to pass downn the functionality of the class Chef to ItalianChef by the <
 # We can always overwrite the first class
 class ItalianChef < Chef
