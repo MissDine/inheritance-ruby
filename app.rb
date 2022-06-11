@@ -2,6 +2,38 @@
 # Single inheritance-one or more sub-classes inherits the behaviour of one super/base class
 # Purpose of single-inheritance is to specialize a base class
 # Multiple inheritance- one or more sub-classes inherit the behaviour of more than one base class.
+
+# MOdule-is a collection of behaviours/methods
+# Mix-in-bringing of the modules into the programme---The modules are mixed in using the include keyword(include ModuleName)
+module CanSwim
+    def swim
+        puts "I can swim!"
+    end    
+end 
+
+class Pet
+    def move 
+        puts "I can move" 
+    end
+end
+# Pet is the super/base class while Dog is it's sub-class hence inherits some of it's functionalities
+class Dog < Pet
+    include CanSwim
+end
+
+class Cat < Pet
+end
+
+class Fish < Pet
+    include CanSwim
+end
+
+dog = Dog.new
+cat = Cat.new
+fish = Fish.new
+
+[dog, fish].each {|pet| pet.swim}
+
 class Chef
     def make_chicken
         puts "The chef makes chicken"
