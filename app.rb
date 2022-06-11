@@ -11,6 +11,11 @@ module CanSwim
     end    
 end 
 
+module Walkable
+    def walk
+        puts "I can walk!"
+    end    
+end 
 class Pet
     def move 
         puts "I can move" 
@@ -19,13 +24,16 @@ end
 # Pet is the super/base class while Dog is it's sub-class hence inherits some of it's functionalities
 class Dog < Pet
     include CanSwim
+    include Walkable
 end
 
 class Cat < Pet
+    include Walkable
 end
 
 class Fish < Pet
     include CanSwim
+    include Walkable
 end
 
 dog = Dog.new
