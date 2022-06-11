@@ -33,7 +33,6 @@ end
 
 class Fish < Pet
     include CanSwim
-    include Walkable
 end
 
 dog = Dog.new
@@ -41,6 +40,10 @@ cat = Cat.new
 fish = Fish.new
 
 [dog, fish].each {|pet| pet.swim}
+cat.walk
+
+# 
+p Dog.ancestors
 
 class Chef
     def make_chicken
@@ -56,7 +59,7 @@ end
 
 # Creating another class of a chef- italianChef.
 # Italianchef is considered a sub class of chef
-# We can use inheritance to pass downn the functionality of the class Chef to ItalianChef by the <
+# We can use inheritance to pass downn the functionality of the class Chef to ItalianChef by the <(inheritance operator)
 # We can always overwrite the first class
 class ItalianChef < Chef
     def make_special_dish
