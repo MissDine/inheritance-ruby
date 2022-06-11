@@ -1,4 +1,7 @@
 # inheritance allows us to extend the functionality of one class into another class
+# Single inheritance-one or more sub-classes inherits the behaviour of one super/base class
+# Purpose of single-inheritance is to specialize a base class
+# Multiple inheritance- one or more sub-classes inherit the behaviour of more than one base class.
 class Chef
     def make_chicken
         puts "The chef makes chicken"
