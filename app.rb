@@ -11,6 +11,13 @@ class Chef
     end  
 end 
 
+# Creating another class of a chef
+# We can use inheritance to pass downn the functionality of the class Chef to ItalianChef by the <
+
+class ItalianChef
+
+end    
+
 # Creating an instance/object of chef
 chef1 = Chef.new
 
