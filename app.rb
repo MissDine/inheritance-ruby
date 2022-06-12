@@ -114,3 +114,4 @@ person.say_hello
 
 
 # SUPER-it allows us to call a method in the super class or higher class
+# Module is always of a higher priority over the super class hence when we include a module and super in our sub class , module will be output first before the super class
