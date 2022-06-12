@@ -85,3 +85,6 @@ italianChef1.make_special_dish
 italianChef1.make_pasta
 
 # In order to lend a module's methods to a class as class methods, we use the extend keyword. 
+
+
+# Reuire_relative is used to access a different class 
