@@ -111,3 +111,6 @@ person.say_hello
 
 
 # Require_relative is used to access a different class 
+
+
+# SUPER-it allows us to call a method in the super class or higher class
