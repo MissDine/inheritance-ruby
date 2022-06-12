@@ -84,22 +84,26 @@ italianChef1.make_special_dish
 
 italianChef1.make_pasta
 
-# In order to lend a module's methods to a class as class methods, we use the extend keyword. 
+# In order to lend a module's methods to a class as class methods, we use the extend keyword.
+# we extend the class to the module then we can now access the method we want vie the .method 
 
 # EXAMPLE 2
 module Say_Hello
-    puts "Hello #{name}"
+    def say_hello
+        puts "Hello #{@name}"
+    end    
 end
 
 class Person
     def initialize name
         @name = name
+    end    
 end 
 
 person = Person.new("Tichi")
 
-Person.extend Say_Hello
-Person.Say_Hello
+person.extend Say_Hello
+person.say_hello
 
 
-# Reuire_relative is used to access a different class 
+# Require_relative is used to access a different class 
