@@ -84,8 +84,12 @@ italianChef1.make_special_dish
 
 italianChef1.make_pasta
 
+# include is used to add functionality to our classes via instance methods.
 # In order to lend a module's methods to a class as class methods, we use the extend keyword.
+# And extend is used to add functionality to our classes via class methods. 
 # we extend the class to the module then we can now access the method we want vie the .method 
+# If you have a module whose methods you would like to be used in another class as instance methods, then you must include the module.
+# If you want a module's methods to be used in another class as class methods, you must extend the module.
 
 # EXAMPLE 2
 module Say_Hello
