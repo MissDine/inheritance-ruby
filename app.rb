@@ -96,7 +96,10 @@ class Person
         @name = name
 end 
 
-person = Person.new
+person = Person.new("Tichi")
+
+Person.extend Say_Hello
+Person.Say_Hello
 
 
 # Reuire_relative is used to access a different class 
